@@ -84,7 +84,6 @@ $(document).ready(function(){
 			slide=10;
 		break;
 		default:
-			prealoder()
 		break;
 	}
 

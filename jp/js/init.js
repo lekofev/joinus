@@ -82,7 +82,6 @@ $(document).ready(function(){
 			slide=10;
 		break;
 		default:
-			prealoder()
 		break;
 	}
 
@@ -174,7 +173,7 @@ $(document).ready(function(){
 
 
 
-		if(urlHash=='' || urlHash=='participar')
+		if(urlHash=='' || urlHash=='問い合わせ')
 		{
 			$('.btn_participar').hide()
 		}

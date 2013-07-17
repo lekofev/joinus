@@ -79,11 +79,10 @@ $(document).ready(function(){
 			slide=9;
 			$('a.contacto').addClass('activo')
 		break;
-		case 'participate':
+		case 'join':
 			slide=10;
 		break;
 		default:
-			prealoder()
 		break;
 	}
 
@@ -150,6 +149,7 @@ $(document).ready(function(){
 
 		$('a.botones').each(function(){
 			$(this).on('click', function(e){	
+
 				e.preventDefault();
 				
 				$('.btn_participar').show()
@@ -175,7 +175,7 @@ $(document).ready(function(){
 
 
 
-		if(urlHash=='' || urlHash=='participar')
+		if(urlHash=='' || urlHash=='join')
 		{
 			$('.btn_participar').hide()
 		}
@@ -223,7 +223,7 @@ $(document).ready(function(){
 						location.hash='contact';
 					break;
 					case 10:
-						location.hash='participate';
+						location.hash='join';
 					break;
 				}
 			}
@@ -262,7 +262,7 @@ $(document).ready(function(){
 						history.pushState(null, null, urlLimpia+'#contact');
 					break;
 					case 10:
-						history.pushState(null, null, urlLimpia+'#participate');
+						history.pushState(null, null, urlLimpia+'#join');
 					break;
 
 				}				

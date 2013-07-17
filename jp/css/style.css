@@ -105,7 +105,7 @@ label.error{
 
 
 .btns {
-  background-image: url(../images/sprite.png);
+  background-image: url(../../images/sprite.png);
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
@@ -139,10 +139,6 @@ label.error{
 	
 	}
 
-.centrado{
-	margin:auto;
-	
-	}
 .relativo{
 	position:relative;
 	}
@@ -154,7 +150,7 @@ label.error{
 	width:760px;
 	}
 .sprite{
-	background-image: url(../images/sprite.png);
+	background-image: url(../../images/sprite.png);
 	background-repeat:no-repeat;
   	border: none;
   	background-color: transparent;
@@ -313,6 +309,9 @@ label.error{
 	display: block;
 	float: left;
 }
+.menu_items .items.ultimo a{
+    color: #75c748;
+}
 .menu_items ul li a{
 	cursor: pointer;
     background-color: #000000;
@@ -324,7 +323,7 @@ label.error{
     line-height: 2.5;
     padding: 0 16px;
     text-decoration: none;
-    background-image: url(../images/menu_barra.jpg);
+    background-image: url(../../images/menu_barra.jpg);
     background-position: right center;
     background-repeat: no-repeat;
     
@@ -404,6 +403,9 @@ label.error{
 .menu_lateral li.jp:hover{
 	background-position: -51px -184px;
 }
+.page.jp .menu_lateral li.jp{
+    background-position: -51px -184px;
+}
 .menu_lateral li.us{
 	top: 141px;
 	background-position: 0 -231px;
@@ -420,7 +422,6 @@ label.error{
 }
 
 .btn_deseo_participar{
-    background-position: 0 -273px;
     height: 172px;
     position: absolute;
     right: 170px;
@@ -428,11 +429,16 @@ label.error{
     width: 213px;	
     z-index: 95;
 }
+.page.jp .btn_deseo_participar{
+    background-position: 0 -629px;
+}
+.page.jp  .btn_deseo_participar:hover{
+    background-position: 0 -814px;
+}
+
+
 .btn_participar{
 	display: none;
-}
-.btn_deseo_participar:hover{
-    background-position: 0 -448px;
 }
 .esferas{
 	position: absolute;
@@ -444,11 +450,11 @@ label.error{
 	
 }
 .esfera_l{
-	background-image: url(../images/esfera_l.png);
+	background-image: url(../../images/esfera_l.png);
 	right:385px;
 }
 .esfera_r{
-	background-image: url(../images/esfera_r.png);
+	background-image: url(../../images/esfera_r.png);
 	right:158px;
 }
 
@@ -471,6 +477,14 @@ label.error{
 	margin-left: -480px;
 	margin-top: -380px;
 }
+.titulos_png{
+    background-repeat: no-repeat;
+    height: 200px;
+    left: 50%;
+    margin-left: -662px;
+    position: absolute;
+    width: 1324px;
+}
 
 .secciones .texto{
 	color:#2d2d2d;
@@ -483,8 +497,8 @@ label.error{
 }
 .secciones .comidilla{
     color: #FFFFFF;
-    font-size: 22px;
-    line-height: 1.5;
+    font-size: 16px;
+    line-height: 1.9;
     position: absolute;
     font-family: 'bignoodletitlingregular';
 }
@@ -539,9 +553,12 @@ label.error{
 
 
 .seccion.explorando{
-	background-image: url(../images/explorando.jpg);
+	background-image: url(../../images/explorando.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;
+}
+.seccion.explorando .titulos_png{
+    background-image: url(../images/titulos/explorando.png);
 }
 .seccion.explorando .texto{
     height: 410px;
@@ -551,14 +568,17 @@ label.error{
 }
 .seccion.explorando .comidilla{
     height: 163px;
-    left: 666px;
+    left: 660px;
     top: 385px;
-    width: 184px;
+    width: 214px;
 }
 .seccion.degustando{
-	background-image: url(../images/degustando.jpg);
+	background-image: url(../../images/degustando.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;
+}
+.seccion.degustando .titulos_png{
+    background-image: url(../images/titulos/degustando.png);
 }
 .seccion.degustando .texto{
     height: 240px;
@@ -568,14 +588,17 @@ label.error{
 }
 .seccion.degustando .comidilla{
     height: 163px;
-    left: 666px;
+    left: 659px;
     top: 418px;
-    width: 194px;
+    width: 224px;
 }
 .seccion.idiomas{
-	background-image: url(../images/idiomas.jpg);
+	background-image: url(../../images/idiomas.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;
+}
+.seccion.idiomas .titulos_png{
+    background-image: url(../images/titulos/idioma.png);
 }
 .seccion.idiomas .texto{
     height: 410px;
@@ -590,9 +613,12 @@ label.error{
     width: 184px;
 }
 .seccion.cultura{
-	background-image: url(../images/cultura.jpg);
+	background-image: url(../../images/cultura.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;
+}
+.seccion.cultura .titulos_png{
+    background-image: url(../images/titulos/cultura.png);
 }
 .seccion.cultura .texto{
     height: 410px;
@@ -604,12 +630,15 @@ label.error{
     height: 163px;
     left: 666px;
     top: 425px;
-    width: 184px;
+    width: 204px;
 }
 .seccion.deporte{
-	background-image: url(../images/deporte.jpg);
+	background-image: url(../../images/deporte.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;
+}
+.seccion.deporte .titulos_png{
+    background-image: url(../images/titulos/deporte.png);
 }
 .seccion.deporte .texto{
     height: 410px;
@@ -619,14 +648,17 @@ label.error{
 }
 .seccion.deporte .comidilla{
     height: 223px;
-    left: 666px;
-    top: 345px;
-    width: 184px;
+    left: 662px;
+    top: 395px;
+    width: 224px;
 }
 .seccion.karaoke{
-	background-image: url(../images/karaoke.jpg);
+	background-image: url(../../images/karaoke.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;
+}
+.seccion.karaoke .titulos_png{
+    background-image: url(../images/titulos/karaoke.png);
 }
 .seccion.karaoke .texto{
     height: 410px;
@@ -636,14 +668,17 @@ label.error{
 }
 .seccion.karaoke .comidilla{
     height: 163px;
-    left: 666px;
-    top: 435px;
-    width: 184px;
+    left: 654px;
+    top: 465px;
+    width: 214px;
 }
 .seccion.partying{
-	background-image: url(../images/partying.jpg);
+	background-image: url(../../images/partying.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;
+}
+.seccion.partying .titulos_png{
+    background-image: url(../images/titulos/partying.png);
 }
 .seccion.partying .texto{
     height: 410px;
@@ -658,9 +693,12 @@ label.error{
     width: 178px;
 }
 .seccion.voluntariado{
-	background-image: url(../images/voluntariado.jpg);
+	background-image: url(../../images/voluntariado.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;
+}
+.seccion.voluntariado .titulos_png{
+    background-image: url(../images/titulos/voluntariado.png);
 }
 .seccion.voluntariado .texto{
     height: 410px;
@@ -676,9 +714,13 @@ label.error{
 }
 
 .seccion.contacto{
-	background-image: url(../images/contacto.jpg);
+	background-image: url(../../images/contacto.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;
+}
+.seccion.contacto .titulos_png{
+    background-image: url(../images/titulos/contacto.png);
+    background-position: -170px -7px;
 }
 .seccion.contacto .preguntas{
     color: #2D2D2D;
@@ -724,9 +766,13 @@ label.error{
 
 
 .seccion.participar{
-	background-image: url(../images/participar.jpg);
+	background-image: url(../../images/participar.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;
+}
+.seccion.participar .titulos_png{
+    background-image: url(../images/titulos/participar.png);
+    background-position: left -14px;
 }
 
 .form_labels{
