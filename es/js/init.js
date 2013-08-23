@@ -68,7 +68,7 @@ $(document).ready(function(){
 			slide=6;
 			$('a.karaoke').addClass('activo')
 		break;
-		case 'partying-lima':
+		case 'fiesta-en-lima':
 			slide=7;
 			$('a.partying').addClass('activo')
 		break;
@@ -212,7 +212,7 @@ $(document).ready(function(){
 						location.hash='karaoke';
 					break;
 					case 7:
-						location.hash='partying-lima';
+						location.hash='fiesta-en-lima';
 					break;
 					case 8:
 						location.hash='voluntariado';
@@ -251,7 +251,7 @@ $(document).ready(function(){
 						history.pushState(null, null, urlLimpia+'#karaoke');
 					break;
 					case 7:
-						history.pushState(null, null, urlLimpia+'#partying-lima');
+						history.pushState(null, null, urlLimpia+'#fiesta-en-lima');
 					break;
 					case 8:
 						history.pushState(null, null, urlLimpia+'#voluntariado');
@@ -269,6 +269,127 @@ $(document).ready(function(){
 		}//pushHistory
 
 
+
+	$(".btn_enviar").click(function(){
+			if($(".form").valid() == true){
+				// console.log('enviado')
+				if(lt_ie9)
+				{
+					$('.msj_enviado').show()				
+				}
+				else
+				{
+					$('.msj_enviado').fadeIn()
+				}
+			}else{
+				return false;	
+
+				console.log('no  nviado')			
+			} // end $("#formulario-registro").valid 	
+	});	//end #btn-continuar.click
+		
+		
+		
+	
+
+	var solotexto='\'\\@+-*/°!"#$%&/()=?¡¨*[];:_^`~¬\\,.-{}+1234567890¡¢£¤¥¦§¨©ª«¬®¯°±²³µ¶·¸¹º»¼½¾¿ÀÂÃÄÅÆÇÈÊËÌÎÏÐÒÔÕÖ×ØÙÛÜÝÞßàâãäåæçèêëìîïðòôõö÷øùûüýþÿŒœŠšŸƒ–—‘’‚“”„†‡•…‰€™´¨¨';
+	var solonumero=' \'\\@ñÑ+-*/°!"#$%&/()=?¡¨*[];:_^`~¬\\,.-{}´+abcdefghijklmnopqrstuvwxyz¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿŒœŠšŸƒ–—‘’‚“”„†‡•…‰€™¿¡';
+	var soloemail='\'\\¿¡ñÑ+*/°!"#$%&/()=?¡¨*[];:^`~¬\\,{}´+¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿŒœŠšŸƒ‘’‚“”„†‡•…‰€™';
+	
+	
+	$("#nombre, #apellidoPaterno, #apellidoMaterno").alpha({allow:" "},{ichars:solotexto});
+	$("#telefono").numeric({ichars:'ñÑ+-*/°!"#$%&/()=?¡¨*[];:_^`~¬\\,.-{}´+¨ç¿ ¡'});
+	$("#email").alphanumeric({ichars:soloemail},{allow:'@_--.'});
+
+
+		
+            jQuery.validator.addMethod("nombre_valido", function(value, element) {
+				if(
+					value == " " || 
+					value == "Nombre" || 
+					value == "Nombres" || 
+					value == "Apellido Paterno" || 
+					value == "Apellido Materno" || 
+					value == "Apellido Materno" ||
+					value == "Dirección" ||
+					value == "Dni" ||  
+					value == "Nombre" || 
+					value == "Provincia" || 
+					value == "Distrito" || 
+					value == "Departamento" || 
+					value == "Día" || 
+					value == "Mes" || 
+					value == "Año" ||
+					value == "A&ntilde;o" || 
+					value == "Operador" || 
+					value == "Modelo" || 
+					value == "Tipo de documento" ||
+					value == "000000000" ||
+					value == "00000000" ||
+					value == "0000000" ||
+					value == "Correo Electrónico" ||
+					value == "Número de Contacto" ||
+					value == "Número Celular" ||
+					value == "DNI" ||
+					value == "Sexo"	||
+					value == "sexo"	||
+					value == "Fecha de Nacimiento" ||
+					value == "Operador Telefónico"	||
+					value == "Especificar Modelo"
+				)
+				{
+					return false;
+				}else{
+					return true;
+				}
+			}, "");
+
+
+
+
+
+	$(".form").validate({
+				rules:{
+					fecha_principal: {
+						required: true,		
+					},
+					nombre: {
+						required: true,
+						rangelength: [2,40],
+						nombre_valido:true			
+					},
+					email: {
+						required: true,
+						email: true,
+						rangelength: [2,200]
+					},
+					telefono: {
+						required: true,
+						digits: true,
+						rangelength: [7,9]
+					}
+		
+				},//End rules 
+				messages: {
+					fecha_principal:'Indícanos una fecha disponible para ti',
+					nombre:'Escribe tu Nombre',
+					email: 'ESCRIBE TU EMAIL',
+					telefono:'Ingrese un telefon vÁlido'
+    			}
+			});	// End Validate
+
+	    
+	    $( "#fecha_principal, #fecha_alternativa, #fecha_alternativa2" ).datepicker({
+			showOn: "button",
+			buttonImage: "images/calendar.gif",
+			buttonImageOnly: true,
+			dayNamesMin: [ "Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa" ],
+			firstDay: 1,
+			monthNames: [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Setiembre", "Octubre", "Noviembre", "Diciembre" ]
+	    });
+
+	    
+	    // $("#fecha_principal").datepicker();
 
 
 });// end jquery

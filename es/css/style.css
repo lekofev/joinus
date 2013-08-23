@@ -4,19 +4,13 @@
 * @author		Nombre_programador
 * @version		1.0
 */
-
-body, html{
-	margin: 0;
-	padding: 0;
-}
-
-
 /* ---------- Globales -------------- */
 body,html{
 	margin:0;
 	padding:0;
 	width:100%;
 	height:100%;
+    font: 80.5% "Trebuchet MS", sans-serif;
 	}
 	
 @font-face {
@@ -91,15 +85,22 @@ textarea.error{
 	background-color: #f7f91c;
 	}	
 label.error{
-    color: #FFFFFF;
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 11px;
-    margin-left: 11px;
-    padding-top: 8px;
-    width: 240px;
-    float: left;
+    color: #353535;
     display: block;
-
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    margin-left: 11px;
+    position: absolute;
+    right: -286px;
+    top: 1px;
+    width: 240px;
+    text-transform: uppercase;
+    background-image: url(../../images/msj_error.png);
+    padding-left:  17px;;
+    background-repeat: no-repeat;
+    font-family: 'bignoodletitlingregular';
+    
 	}
 
 
@@ -272,7 +273,7 @@ label.error{
 	width: 100%;
 	min-width: 960px;
 	min-height: 640px;
-	height: 100%;
+	height: 850px;
 	position: relative;
 	background-color: #414141;
 }
@@ -502,7 +503,7 @@ label.error{
     font-family: 'bignoodletitlingregular';
 }
 .seccion.inicio{
-	background-image: url(../../images/inicio.jpg);
+	background-image: url(../images/inicio.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;
 }
@@ -597,7 +598,7 @@ label.error{
     height: 410px;
     left: 310px;
     top: 220px;
-    width: 295px;
+    width: 285px;
 }
 .seccion.idiomas .comidilla{
     height: 163px;
@@ -718,14 +719,14 @@ label.error{
 }
 .seccion.contacto .titulos_png{
     background-image: url(../images/titulos/contacto.png);
-    background-position: -50px -31px;
+    background-position: 0px 9px;
 }
 .seccion.contacto .preguntas{
     color: #2D2D2D;
     display: block;
     font-family: 'bignoodletitlingregular';
     font-size: 46px;
-    left: 300px;
+    left: 274px;
     position: absolute;
     top: 320px;	
 }
@@ -735,7 +736,7 @@ label.error{
     display: block;
     font-family: 'bignoodletitlingregular';
     font-size: 46px;
-    left: 288px;
+    left: 258px;
     position: absolute;
     top: 384px;
 }
@@ -776,21 +777,21 @@ label.error{
 .form_labels{
     color: #FFFFFF;
     font-family: 'bignoodletitlingregular';
-    font-size: 25px;
+    font-size: 20px;
     height: 150px;
     left: 143px;
     line-height: 1.9;
     position: absolute;
     text-align: right;
-    top: 120px;
-    width: 200px;
+    top: 95px;
+    width: 260px;
 }
 
 .form{
     height: 350px;
-    left: 360px;
+    left: 420px;
     position: absolute;
-    top: 125px;
+    top: 136px;
     width: 284px;
 }
 
@@ -813,11 +814,12 @@ label.error{
     font-size: 15px;
     font-family: 'robotoregular';
     width: 284px;
-    height: 150px;
+    height: 90px;
 
 }
 .form li{
-	margin-bottom: 30px;
+	margin-bottom: 17px;
+    position: relative;
 }
 input.radio{
     width: 15px;
@@ -831,15 +833,61 @@ input.radio{
     color: #FFFFFF;
     font-family: 'bignoodletitlingregular';
     font-size: 20px;
-    margin-top: -24px;
     text-align: left;
 
 }
 
 .btn_enviar{
-    background-image: url("../../images/btn_enviar.jpg");
+    background-image: url("../images/btn_enviar.jpg");
     float: right;
     width: 98px !important;
 	
 
+}
+.ui-datepicker-trigger{
+    position: absolute;
+    right: -20px;
+    top: 5px;
+}
+.espaciado{
+    margin-bottom: 20px;
+
+}
+.espacilado_li{
+    margin-bottom: 35px !important;
+
+}
+.msj_enviado{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    background-image: url(../../images/px_negro.png);
+    display: none;
+
+}
+.gracias{
+    width: 897px;
+    height: 156px;
+    position: absolute;
+    background-image: url(../images/gracias.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    top: 50%;
+    left: 50%;
+    margin-left: -450px;
+    margin-top: -80px; 
+}
+.btn_gracias{
+    width: 97px;
+    height: 25px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -47px;
+    background-position: 500px 500px;
+    text-indent: -9999px;
+    display: block;
 }

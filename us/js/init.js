@@ -38,28 +38,29 @@ $(document).ready(function(){
 	}		
 
 
+
 	switch(urlHash)
 	{
 		case '':
 			slide=0;
 		break;
-		case 'exploring-lima':
+		case 'explorando-lima':
 			slide=1;
 			$('a.explorando').addClass('activo')
 		break;
-		case 'savoring-peruvian-food':
+		case 'degustando':
 			slide=2;
 			$('a.degustando').addClass('activo')
 		break;
-		case 'language':
+		case 'idiomas':
 			slide=3;
 			$('a.idiomas').addClass('activo')
 		break;
-		case 'culture':
+		case 'cultura':
 			slide=4;
 			$('a.cultura').addClass('activo')
 		break;
-		case 'sports':
+		case 'deporte':
 			slide=5;
 			$('a.deporte').addClass('activo')
 		break;
@@ -67,19 +68,19 @@ $(document).ready(function(){
 			slide=6;
 			$('a.karaoke').addClass('activo')
 		break;
-		case 'partying-lima':
+		case 'fiesta-en-lima':
 			slide=7;
 			$('a.partying').addClass('activo')
 		break;
-		case 'volunteering':
+		case 'voluntariado':
 			slide=8;
 			$('a.voluntariado').addClass('activo')
 		break;
-		case 'contact':
+		case 'contactenos':
 			slide=9;
 			$('a.contacto').addClass('activo')
 		break;
-		case 'join':
+		case 'participar':
 			slide=10;
 		break;
 		default:
@@ -149,7 +150,6 @@ $(document).ready(function(){
 
 		$('a.botones').each(function(){
 			$(this).on('click', function(e){	
-
 				e.preventDefault();
 				
 				$('.btn_participar').show()
@@ -175,7 +175,7 @@ $(document).ready(function(){
 
 
 
-		if(urlHash=='' || urlHash=='join')
+		if(urlHash=='' || urlHash=='participar')
 		{
 			$('.btn_participar').hide()
 		}
@@ -183,8 +183,6 @@ $(document).ready(function(){
 		{
 			$('.btn_participar').show()	
 		}
-
-
 
 		function pushHistory(n)
 		{	
@@ -196,34 +194,34 @@ $(document).ready(function(){
 						location.hash='';
 					break;
 					case 1:
-						location.hash='exploring-lima';
+						location.hash='explorando-lima';
 					break;
 					case 2:
-						location.hash='savoring-peruvian-food';
+						location.hash='degustando';
 					break;
 					case 3:
-						location.hash='language';
+						location.hash='idiomas';
 					break;
 					case 4:
-						location.hash='culture';
+						location.hash='cultura';
 					break;
 					case 5:
-						location.hash='sports';
+						location.hash='deporte';
 					break;
 					case 6:
 						location.hash='karaoke';
 					break;
 					case 7:
-						location.hash='partying-lima';
+						location.hash='fiesta-en-lima';
 					break;
 					case 8:
-						location.hash='volunteering';
+						location.hash='voluntariado';
 					break;
 					case 9:
-						location.hash='contact';
+						location.hash='contactenos';
 					break;
 					case 10:
-						location.hash='join';
+						location.hash='participar';
 					break;
 				}
 			}
@@ -235,34 +233,34 @@ $(document).ready(function(){
 						history.pushState(null, null, urlLimpia+'');
 					break;
 					case 1:
-						history.pushState(null, null, urlLimpia+'#exploring-lima');
+						history.pushState(null, null, urlLimpia+'#explorando-lima');
 					break;
 					case 2:
-						history.pushState(null, null, urlLimpia+'#savoring-peruvian-food');
+						history.pushState(null, null, urlLimpia+'#degustando');
 					break;
 					case 3:
-						history.pushState(null, null, urlLimpia+'#language');
+						history.pushState(null, null, urlLimpia+'#idiomas');
 					break;
 					case 4:
-						history.pushState(null, null, urlLimpia+'#culture');
+						history.pushState(null, null, urlLimpia+'#cultura');
 					break;
 					case 5:
-						history.pushState(null, null, urlLimpia+'#sports');
+						history.pushState(null, null, urlLimpia+'#deporte');
 					break;
 					case 6:
 						history.pushState(null, null, urlLimpia+'#karaoke');
 					break;
 					case 7:
-						history.pushState(null, null, urlLimpia+'#partying-lima');
+						history.pushState(null, null, urlLimpia+'#fiesta-en-lima');
 					break;
 					case 8:
-						history.pushState(null, null, urlLimpia+'#volunteering');
+						history.pushState(null, null, urlLimpia+'#voluntariado');
 					break;
 					case 9:
-						history.pushState(null, null, urlLimpia+'#contact');
+						history.pushState(null, null, urlLimpia+'#contactenos');
 					break;
 					case 10:
-						history.pushState(null, null, urlLimpia+'#join');
+						history.pushState(null, null, urlLimpia+'#participar');
 					break;
 
 				}				
@@ -271,6 +269,120 @@ $(document).ready(function(){
 		}//pushHistory
 
 
+
+	$(".btn_enviar").click(function(){
+			if($(".form").valid() == true){
+				if(lt_ie9)
+				{
+					$('.msj_enviado').show()				
+				}
+				else
+				{
+					$('.msj_enviado').fadeIn()
+				}
+			}else{
+				return false;	
+
+				console.log('no  nviado')			
+			} // end $("#formulario-registro").valid 	
+	});	//end #btn-continuar.click
+		
+		
+		
+	
+
+	var solotexto='\'\\@+-*/°!"#$%&/()=?¡¨*[];:_^`~¬\\,.-{}+1234567890¡¢£¤¥¦§¨©ª«¬®¯°±²³µ¶·¸¹º»¼½¾¿ÀÂÃÄÅÆÇÈÊËÌÎÏÐÒÔÕÖ×ØÙÛÜÝÞßàâãäåæçèêëìîïðòôõö÷øùûüýþÿŒœŠšŸƒ–—‘’‚“”„†‡•…‰€™´¨¨';
+	var solonumero=' \'\\@ñÑ+-*/°!"#$%&/()=?¡¨*[];:_^`~¬\\,.-{}´+abcdefghijklmnopqrstuvwxyz¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿŒœŠšŸƒ–—‘’‚“”„†‡•…‰€™¿¡';
+	var soloemail='\'\\¿¡ñÑ+*/°!"#$%&/()=?¡¨*[];:^`~¬\\,{}´+¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿŒœŠšŸƒ‘’‚“”„†‡•…‰€™';
+	
+	
+	$("#nombre, #apellidoPaterno, #apellidoMaterno").alpha({allow:" "},{ichars:solotexto});
+	$("#telefono").numeric({ichars:'ñÑ+-*/°!"#$%&/()=?¡¨*[];:_^`~¬\\,.-{}´+¨ç¿ ¡'});
+	$("#email").alphanumeric({ichars:soloemail},{allow:'@_--.'});
+
+
+		
+            jQuery.validator.addMethod("nombre_valido", function(value, element) {
+				if(
+					value == " " || 
+					value == "Nombre" || 
+					value == "Nombres" || 
+					value == "Apellido Paterno" || 
+					value == "Apellido Materno" || 
+					value == "Apellido Materno" ||
+					value == "Dirección" ||
+					value == "Dni" ||  
+					value == "Nombre" || 
+					value == "Provincia" || 
+					value == "Distrito" || 
+					value == "Departamento" || 
+					value == "Día" || 
+					value == "Mes" || 
+					value == "Año" ||
+					value == "A&ntilde;o" || 
+					value == "Operador" || 
+					value == "Modelo" || 
+					value == "Tipo de documento" ||
+					value == "000000000" ||
+					value == "00000000" ||
+					value == "0000000" ||
+					value == "Correo Electrónico" ||
+					value == "Número de Contacto" ||
+					value == "Número Celular" ||
+					value == "DNI" ||
+					value == "Sexo"	||
+					value == "sexo"	||
+					value == "Fecha de Nacimiento" ||
+					value == "Operador Telefónico"	||
+					value == "Especificar Modelo"
+				)
+				{
+					return false;
+				}else{
+					return true;
+				}
+			}, "");
+
+
+
+
+
+	$(".form").validate({
+				rules:{
+					fecha_principal: {
+						required: true,		
+					},
+					nombre: {
+						required: true,
+						rangelength: [2,40],
+						nombre_valido:true			
+					},
+					email: {
+						required: true,
+						email: true,
+						rangelength: [2,200]
+					},
+					telefono: {
+						required: true,
+						digits: true,
+						rangelength: [7,9]
+					}
+		
+				},//End rules 
+				messages: {
+					fecha_principal:'Let us know an available day for you',					
+					fecha_alternativa:'Escriba una fecha alternativa',
+					nombre:'Please write your name',
+					email: 'Please write your email address',
+					telefono:'Please write your phone number'
+    			}
+			});	// End Validate
+	    
+	    $( "#fecha_principal, #fecha_alternativa, #fecha_alternativa2" ).datepicker({
+			showOn: "button",
+			buttonImage: "images/calendar.gif",
+			buttonImageOnly: true
+	    });
 
 
 });// end jquery

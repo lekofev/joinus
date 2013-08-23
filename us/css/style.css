@@ -5,11 +5,6 @@
 * @version		1.0
 */
 
-body, html{
-	margin: 0;
-	padding: 0;
-}
-
 
 /* ---------- Globales -------------- */
 body,html{
@@ -17,6 +12,7 @@ body,html{
 	padding:0;
 	width:100%;
 	height:100%;
+    font: 80.5% "Trebuchet MS", sans-serif;
 	}
 	
 @font-face {
@@ -91,16 +87,23 @@ textarea.error{
 	background-color: #f7f91c;
 	}	
 label.error{
-    color: #FFFFFF;
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 11px;
-    margin-left: 11px;
-    padding-top: 8px;
-    width: 240px;
-    float: left;
+    color: #353535;
     display: block;
-
-	}
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    margin-left: 11px;
+    position: absolute;
+    right: -286px;
+    top: 1px;
+    width: 240px;
+    text-transform: uppercase;
+    background-image: url(../../images/msj_error.png);
+    padding-left:  17px;;
+    background-repeat: no-repeat;
+    font-family: 'bignoodletitlingregular';
+    
+    }
 
 
 
@@ -272,7 +275,7 @@ label.error{
 	width: 100%;
 	min-width: 960px;
 	min-height: 640px;
-	height: 100%;
+	height: 850px;
 	position: relative;
 	background-color: #414141;
 }
@@ -321,7 +324,7 @@ label.error{
     font-size: 12px;
     height: 29px;
     line-height: 2.5;
-    padding:0 13px;
+    padding: 0 13px;
     text-decoration: none;
     background-image: url(../../images/menu_barra.jpg);
     background-position: right center;
@@ -396,12 +399,18 @@ label.error{
 .menu_lateral li.es:hover{
 	background-position: -51px -136px;
 }
+.page.es .menu_lateral li.es{
+    background-position: -51px -136px;
+}
 .menu_lateral li.jp{
 	top: 108px;
 	background-position: 0 -184px;
 }
 .menu_lateral li.jp:hover{
 	background-position: -51px -184px;
+}
+.page.jp .menu_lateral li.jp{
+    background-position: -51px -184px;
 }
 .menu_lateral li.us{
 	top: 141px;
@@ -410,10 +419,10 @@ label.error{
 .menu_lateral li.us:hover{
 	background-position: -51px -231px;
 }
+
 .page.us .menu_lateral li.us{
     background-position: -51px -231px;
 }
-
 .menu_lateral li a{
     height: 100%;    
     position: absolute;
@@ -430,11 +439,10 @@ label.error{
     z-index: 95;
 }
 .page.us .btn_deseo_participar{
-    background-position: 0 -994px;
-
+    background-position: 0 -993px;
 }
 .page.us .btn_deseo_participar:hover{
-    background-position: 0 -1180px;
+    background-position: 0 -993px;
 }
 
 .btn_participar{
@@ -486,7 +494,6 @@ label.error{
     width: 1324px;
 }
 
-
 .secciones .texto{
 	color:#2d2d2d;
 	font-size: 13px;
@@ -504,9 +511,10 @@ label.error{
     font-family: 'bignoodletitlingregular';
 }
 .seccion.inicio{
-	background-image: url(../../images/inicio.jpg);
+	background-image: url(../images/inicio.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;
+    background-position: center -70px;
 }
 .seccion.inicio .titulo{
     color: #5F5D53;
@@ -518,17 +526,16 @@ label.error{
     top: 398px;
 }
 .seccion.inicio .sub_titulo{
-    color: #2c2a24;
+    color: #2C2A24;
     font-family: 'robotoregular';
     font-size: 14px;
-    left: 160px;
+    left: 137px;
     line-height: 2;
     position: absolute;
     text-align: center;
     top: 450px;
-    width: 660px;
+    width: 690px;
 }
-
 
 
 .seccion.inicio .sub_titulo_2{
@@ -540,7 +547,7 @@ label.error{
     position: absolute;
     text-align: center;
     top: 490px;
-    width: 680px;
+    width: 640px;
 }
 
 
@@ -557,7 +564,7 @@ label.error{
 .seccion.explorando .texto{
     height: 410px;
     left: 310px;
-    top: 230px;
+    top: 200px;
     width: 295px;
 }
 .seccion.explorando .comidilla{
@@ -573,7 +580,7 @@ label.error{
 }
 .seccion.degustando .titulos_png{
     background-image: url(../images/titulos/degustando.png);
-    background-position: left -10px;
+    background-position: left 0;
 }
 .seccion.degustando .texto{
     height: 240px;
@@ -584,7 +591,7 @@ label.error{
 .seccion.degustando .comidilla{
     height: 163px;
     left: 666px;
-    top: 430px;
+    top: 441px;
     width: 194px;
 }
 .seccion.idiomas{
@@ -593,7 +600,7 @@ label.error{
 	background-position: center top;
 }
 .seccion.idiomas .titulos_png{
-    background-image: url(../images/titulos/idioma.png);
+    background-image: url(../images/titulos/idiomas.png);
     background-position: left -30px;
 }
 .seccion.idiomas .texto{
@@ -721,14 +728,14 @@ label.error{
 }
 .seccion.contacto .titulos_png{
     background-image: url(../images/titulos/contacto.png);
-    background-position: left -40px;
+    background-position: 0px 9px;
 }
 .seccion.contacto .preguntas{
     color: #2D2D2D;
     display: block;
     font-family: 'bignoodletitlingregular';
     font-size: 46px;
-    left: 210px;
+    left: 300px;
     position: absolute;
     top: 320px;	
 }
@@ -737,10 +744,10 @@ label.error{
     color: #FFFFFF;
     display: block;
     font-family: 'bignoodletitlingregular';
-    font-size: 36px;
-    left: 268px;
+    font-size: 46px;
+    left: 288px;
     position: absolute;
-    top: 378px;
+    top: 384px;
 }
 
 .seccion.contacto .llamanos{
@@ -773,27 +780,27 @@ label.error{
 }
 .seccion.participar .titulos_png{
     background-image: url(../images/titulos/participar.png);
-    background-position: -55px -21px;
+    background-position: -50px -19px;
 }
 
 .form_labels{
     color: #FFFFFF;
     font-family: 'bignoodletitlingregular';
-    font-size: 25px;
+    font-size: 20px;
     height: 150px;
-    left: 103px;
+    left: 143px;
     line-height: 1.9;
     position: absolute;
     text-align: right;
-    top: 120px;
-    width: 250px;
+    top: 95px;
+    width: 260px;
 }
 
 .form{
     height: 350px;
-    left: 360px;
+    left: 420px;
     position: absolute;
-    top: 125px;
+    top: 136px;
     width: 284px;
 }
 
@@ -816,11 +823,12 @@ label.error{
     font-size: 15px;
     font-family: 'robotoregular';
     width: 284px;
-    height: 150px;
+    height: 90px;
 
 }
 .form li{
-	margin-bottom: 30px;
+	margin-bottom: 17px;
+    position: relative;
 }
 input.radio{
     width: 15px;
@@ -834,15 +842,63 @@ input.radio{
     color: #FFFFFF;
     font-family: 'bignoodletitlingregular';
     font-size: 20px;
-    margin-top: -24px;
     text-align: left;
 
 }
 
 .btn_enviar{
-    background-image: url("../../images/btn_enviar.jpg");
+    background-image: url("../images/btn_enviar.jpg");
     float: right;
     width: 98px !important;
 	
 
+}
+.ui-datepicker-trigger{
+    position: absolute;
+    right: -20px;
+    top: 5px;
+}
+.espaciado{
+    margin-bottom: 20px;
+
+}
+.espacilado_li{
+    margin-bottom: 35px !important;
+
+}
+.msj_enviado{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    background-image: url(../../images/px_negro.png);
+    display: none;
+
+
+}
+.gracias{
+    width: 897px;
+    height: 156px;
+    position: absolute;
+    background-image: url(../images/gracias.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    top: 50%;
+    left: 50%;
+    margin-left: -450px;
+    margin-top: -80px; 
+}
+.btn_gracias{
+    width: 97px;
+    height: 25px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -47px;
+    background-position: 500px 500px;
+    text-indent: -9999px;
+    display: block;
+    
 }

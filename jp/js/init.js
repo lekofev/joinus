@@ -37,44 +37,46 @@ $(document).ready(function(){
 		msie=true;
 	}		
 
+
+
 	switch(urlHash)
 	{
 		case '':
 			slide=0;
 		break;
-		case 'リマを探索しよう':
+		case 'explorando-lima':
 			slide=1;
 			$('a.explorando').addClass('activo')
 		break;
-		case 'ペルー料理の味わい':
+		case 'degustando':
 			slide=2;
 			$('a.degustando').addClass('activo')
 		break;
-		case '言語交換':
+		case 'idiomas':
 			slide=3;
 			$('a.idiomas').addClass('activo')
 		break;
-		case '文化と博物館':
+		case 'cultura':
 			slide=4;
 			$('a.cultura').addClass('activo')
 		break;
-		case 'スポッツ':
+		case 'deporte':
 			slide=5;
 			$('a.deporte').addClass('activo')
 		break;
-		case 'カラオケ':
+		case 'karaoke':
 			slide=6;
 			$('a.karaoke').addClass('activo')
 		break;
-		case 'リマでパーティーしよう':
+		case 'fiesta-en-lima':
 			slide=7;
 			$('a.partying').addClass('activo')
 		break;
-		case 'ボランティア活動':
+		case 'voluntariado':
 			slide=8;
 			$('a.voluntariado').addClass('activo')
 		break;
-		case '問い合わせ':
+		case 'contactenos':
 			slide=9;
 			$('a.contacto').addClass('activo')
 		break;
@@ -173,7 +175,7 @@ $(document).ready(function(){
 
 
 
-		if(urlHash=='' || urlHash=='問い合わせ')
+		if(urlHash=='' || urlHash=='participar')
 		{
 			$('.btn_participar').hide()
 		}
@@ -192,31 +194,31 @@ $(document).ready(function(){
 						location.hash='';
 					break;
 					case 1:
-						location.hash='リマを探索しよう';
+						location.hash='explorando-lima';
 					break;
 					case 2:
-						location.hash='ペルー料理の味わい';
+						location.hash='degustando';
 					break;
 					case 3:
-						location.hash='言語交換';
+						location.hash='idiomas';
 					break;
 					case 4:
-						location.hash='文化と博物館';
+						location.hash='cultura';
 					break;
 					case 5:
-						location.hash='スポッツ';
+						location.hash='deporte';
 					break;
 					case 6:
-						location.hash='カラオケ';
+						location.hash='karaoke';
 					break;
 					case 7:
-						location.hash='リマでパーティーしよう';
+						location.hash='fiesta-en-lima';
 					break;
 					case 8:
-						location.hash='ボランティア活動';
+						location.hash='voluntariado';
 					break;
 					case 9:
-						location.hash='問い合わせ';
+						location.hash='contactenos';
 					break;
 					case 10:
 						location.hash='participar';
@@ -225,39 +227,37 @@ $(document).ready(function(){
 			}
 			else
 			{
-
-
 				switch(n)
 				{
 					case 0:
 						history.pushState(null, null, urlLimpia+'');
 					break;
 					case 1:
-						history.pushState(null, null, urlLimpia+'#リマを探索しよう');
+						history.pushState(null, null, urlLimpia+'#explorando-lima');
 					break;
 					case 2:
-						history.pushState(null, null, urlLimpia+'#ペルー料理の味わい');
+						history.pushState(null, null, urlLimpia+'#degustando');
 					break;
 					case 3:
-						history.pushState(null, null, urlLimpia+'#言語交換');
+						history.pushState(null, null, urlLimpia+'#idiomas');
 					break;
 					case 4:
-						history.pushState(null, null, urlLimpia+'#文化と博物館');
+						history.pushState(null, null, urlLimpia+'#cultura');
 					break;
 					case 5:
-						history.pushState(null, null, urlLimpia+'#スポッツ');
+						history.pushState(null, null, urlLimpia+'#deporte');
 					break;
 					case 6:
-						history.pushState(null, null, urlLimpia+'#カラオケ');
+						history.pushState(null, null, urlLimpia+'#karaoke');
 					break;
 					case 7:
-						history.pushState(null, null, urlLimpia+'#リマでパーティーしよう');
+						history.pushState(null, null, urlLimpia+'#fiesta-en-lima');
 					break;
 					case 8:
-						history.pushState(null, null, urlLimpia+'#ボランティア活動');
+						history.pushState(null, null, urlLimpia+'#voluntariado');
 					break;
 					case 9:
-						history.pushState(null, null, urlLimpia+'#問い合わせ');
+						history.pushState(null, null, urlLimpia+'#contactenos');
 					break;
 					case 10:
 						history.pushState(null, null, urlLimpia+'#participar');
@@ -269,6 +269,123 @@ $(document).ready(function(){
 		}//pushHistory
 
 
+
+	$(".btn_enviar").click(function(){
+			if($(".form").valid() == true){
+				if(lt_ie9)
+				{
+					$('.msj_enviado').show()				
+				}
+				else
+				{
+					$('.msj_enviado').fadeIn()
+				}
+			}else{
+				return false;	
+
+				console.log('no  nviado')			
+			} // end $("#formulario-registro").valid 	
+	});	//end #btn-continuar.click
+		
+		
+		
+	
+
+	var solotexto='\'\\@+-*/°!"#$%&/()=?¡¨*[];:_^`~¬\\,.-{}+1234567890¡¢£¤¥¦§¨©ª«¬®¯°±²³µ¶·¸¹º»¼½¾¿ÀÂÃÄÅÆÇÈÊËÌÎÏÐÒÔÕÖ×ØÙÛÜÝÞßàâãäåæçèêëìîïðòôõö÷øùûüýþÿŒœŠšŸƒ–—‘’‚“”„†‡•…‰€™´¨¨';
+	var solonumero=' \'\\@ñÑ+-*/°!"#$%&/()=?¡¨*[];:_^`~¬\\,.-{}´+abcdefghijklmnopqrstuvwxyz¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿŒœŠšŸƒ–—‘’‚“”„†‡•…‰€™¿¡';
+	var soloemail='\'\\¿¡ñÑ+*/°!"#$%&/()=?¡¨*[];:^`~¬\\,{}´+¡¢£¤¥¦§¨©ª«¬®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿŒœŠšŸƒ‘’‚“”„†‡•…‰€™';
+	
+	
+	$("#nombre, #apellidoPaterno, #apellidoMaterno").alpha({allow:" "},{ichars:solotexto});
+	$("#telefono").numeric({ichars:'ñÑ+-*/°!"#$%&/()=?¡¨*[];:_^`~¬\\,.-{}´+¨ç¿ ¡'});
+	$("#email").alphanumeric({ichars:soloemail},{allow:'@_--.'});
+
+
+		
+            jQuery.validator.addMethod("nombre_valido", function(value, element) {
+				if(
+					value == " " || 
+					value == "Nombre" || 
+					value == "Nombres" || 
+					value == "Apellido Paterno" || 
+					value == "Apellido Materno" || 
+					value == "Apellido Materno" ||
+					value == "Dirección" ||
+					value == "Dni" ||  
+					value == "Nombre" || 
+					value == "Provincia" || 
+					value == "Distrito" || 
+					value == "Departamento" || 
+					value == "Día" || 
+					value == "Mes" || 
+					value == "Año" ||
+					value == "A&ntilde;o" || 
+					value == "Operador" || 
+					value == "Modelo" || 
+					value == "Tipo de documento" ||
+					value == "000000000" ||
+					value == "00000000" ||
+					value == "0000000" ||
+					value == "Correo Electrónico" ||
+					value == "Número de Contacto" ||
+					value == "Número Celular" ||
+					value == "DNI" ||
+					value == "Sexo"	||
+					value == "sexo"	||
+					value == "Fecha de Nacimiento" ||
+					value == "Operador Telefónico"	||
+					value == "Especificar Modelo"
+				)
+				{
+					return false;
+				}else{
+					return true;
+				}
+			}, "");
+
+
+
+
+
+	$(".form").validate({
+				rules:{
+					fecha_principal: {
+						required: true,		
+					},
+					nombre: {
+						required: true,
+						rangelength: [2,40],
+						nombre_valido:true			
+					},
+					email: {
+						required: true,
+						email: true,
+						rangelength: [2,200]
+					},
+					telefono: {
+						required: true,
+						digits: true,
+						rangelength: [7,9]
+					}
+		
+				},//End rules 
+				messages: {
+					fecha_principal:'参加可能な日を教えてください',	
+					nombre:'お名前を記入して下さい',
+					email: 'メールアドレスを記入して下さい',
+					telefono:'連絡番号を入力してください'
+    			}
+			});	// End Validate
+
+
+	    
+	    $( "#fecha_principal, #fecha_alternativa, #fecha_alternativa2" ).datepicker({
+			showOn: "button",
+			buttonImage: "images/calendar.gif",
+			buttonImageOnly: true,
+			dayNamesMin: [ "日", "月", "火", "水", "木", "金", "土" ],
+			monthNames:['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
+	    });
 
 
 });// end jquery

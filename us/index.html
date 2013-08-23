@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html lang="es" class="no-js"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>Untitled</title>
+	<title>JoinUs</title>
 	<meta name="title" content="">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
@@ -21,6 +21,7 @@
 	
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery-ui-1.9.2.custom.min.css" >
 	<link rel="stylesheet" href="css/style.css?v=1">
 	
 	<script>
@@ -71,7 +72,7 @@
 					<div class="sub_titulo_2"><span class="robo_black_n">and Peruvians will be able to share ideas,</span>
 					 	precious moments, opinions, experiences, language and more.
 If you are interested in making new friends and broaden your network, join us by doing what you like the most. <br>
-<span class="robo_black_n">U can join our groups alone or with friends.We are waiting for you!</span>
+<span class="robo_black_n">You can join our groups alone or with friends.We are waiting for you!</span>
 					</div>
 
 
@@ -220,7 +221,7 @@ Take part in our group and enjoy more singing!
 
 					</div>
 					<div class="comidilla">
-					“Join our different volunteering activities in Peru. 
+					“Join our different volunteering activities in Peru."
 					</div>
 				</div>						
 			</div>
@@ -236,7 +237,6 @@ Take part in our group and enjoy more singing!
 					<div class="llamanos">
 						CALL US <br>
 						(051) 999-029830 <br>
-						(051) 999-029830 
 					</div>
 					<div class="escribenos">
 						Write us! <br>
@@ -249,15 +249,29 @@ Take part in our group and enjoy more singing!
 				<div class="titulos_png tit_png"></div>
 				<div class="centrado">
 					<div class="form_labels">
+						SELECT A DATE TO PARTICIPATE<br>
+						MAIN DATE (1st OPTION)*<br>
+						2ND OPTION<br>
+						3RD OPTION<br>
+						<div class="espaciado"></div>
 						NAME*:<br>
 						EMAIL*:<br>
 						PHONE*:<br>
-						¿DO YOU COME WITH FRIENDS?*:<br>
+						DO YOU COME WITH FRIENDS?*:<br>
 						COMENT:
 					</div>
 
 					<form action="" class="form">
 						<ul>
+							<li>
+								<input id="fecha_principal" name="fecha_principal" type ="text" class="skin textos" value="" maxlength="40">
+							</li>
+							<li>
+								<input id="fecha_alternativa" name="fecha_alternativa" type ="text" class="skin textos" value="" maxlength="40">
+							</li>
+							<li class="espacilado_li">
+								<input id="fecha_alternativa2" name="fecha_alternativa2" type ="text" class="skin textos" value="" maxlength="40">
+							</li>
 							<li>
 								<input id="nombre" name="nombre" type ="text" class="skin textos" value="" maxlength="40">
 							</li>
@@ -265,7 +279,7 @@ Take part in our group and enjoy more singing!
 								<input id="email" name="email" type ="text" class="skin textos"  value=""  maxlength="200">
 							</li>
 							<li>
-								<input id="celular" name="celular" type="text" class="skin textos" value=""  maxlength="9">	
+								<input id="telefono" name="telefono" type="text" class="skin textos" value=""  maxlength="9">	
 							</li>
 							<li>
 								<input type="radio" name="amigos" id="si" class="radio" checked>
@@ -312,12 +326,21 @@ Take part in our group and enjoy more singing!
 			© 2013 - Todos los derechos reservados - Joinus.pe
 		</div>
 
+		<div class="msj_enviado">
+			<div class="gracias">
+				<a href="index.html" class="btns btn_gracias">Gracias</a>
+			</div>
+		</div>
+
 
 
 	</div>
 	
 	<script src="js/vendor/jquery-1.8.1.min.js"></script>
 	<script src="js/vendor/TweenMax.min.js"></script>
+	<script src="js/vendor/jquery.alphanumeric.pack.js"></script>
+	<script src="js/vendor/jquery.validate.js"></script>
+	<script src="js/vendor/jquery-ui-1.9.2.custom.min.js"></script>
 	<script src="js/vendor/cycle.js"></script>
 	<script src="js/init.js?v=1"></script>
 </body>
