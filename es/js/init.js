@@ -91,7 +91,7 @@ $(document).ready(function(){
 
 			  
 
-	$('.secciones').cycle({ 
+	$('.secciones_cycle').cycle({ 
 			fx: 'fade',
 			timeout:0,
 			speed:1000,
@@ -167,7 +167,7 @@ $(document).ready(function(){
 					$('.btn_participar').show()	
 				}
 
-				$('.secciones').cycle(slide)
+				$('.secciones_cycle').cycle(slide)
 				pushHistory(slide)
 			})
 

@@ -44,23 +44,23 @@ $(document).ready(function(){
 		case '':
 			slide=0;
 		break;
-		case 'explorando-lima':
+		case 'exploring-lima':
 			slide=1;
 			$('a.explorando').addClass('activo')
 		break;
-		case 'degustando':
+		case 'savoring-peruvian-food':
 			slide=2;
 			$('a.degustando').addClass('activo')
 		break;
-		case 'idiomas':
+		case 'lenguage':
 			slide=3;
 			$('a.idiomas').addClass('activo')
 		break;
-		case 'cultura':
+		case 'culture':
 			slide=4;
 			$('a.cultura').addClass('activo')
 		break;
-		case 'deporte':
+		case 'sports':
 			slide=5;
 			$('a.deporte').addClass('activo')
 		break;
@@ -68,30 +68,27 @@ $(document).ready(function(){
 			slide=6;
 			$('a.karaoke').addClass('activo')
 		break;
-		case 'fiesta-en-lima':
+		case 'partying-lima':
 			slide=7;
 			$('a.partying').addClass('activo')
 		break;
-		case 'voluntariado':
+		case 'volunteering':
 			slide=8;
 			$('a.voluntariado').addClass('activo')
 		break;
-		case 'contactenos':
+		case 'contact':
 			slide=9;
 			$('a.contacto').addClass('activo')
 		break;
-		case 'participar':
+		case 'joinus':
 			slide=10;
 		break;
 		default:
 		break;
 	}
-
-
-
 			  
 
-	$('.secciones').cycle({ 
+	$('.secciones_cycle').cycle({ 
 			fx: 'fade',
 			timeout:0,
 			speed:1000,
@@ -167,7 +164,7 @@ $(document).ready(function(){
 					$('.btn_participar').show()	
 				}
 
-				$('.secciones').cycle(slide)
+				$('.secciones_cycle').cycle(slide)
 				pushHistory(slide)
 			})
 
@@ -194,34 +191,34 @@ $(document).ready(function(){
 						location.hash='';
 					break;
 					case 1:
-						location.hash='explorando-lima';
+						location.hash='exploring-lima';
 					break;
 					case 2:
-						location.hash='degustando';
+						location.hash='savoring-peruvian-food';
 					break;
 					case 3:
-						location.hash='idiomas';
+						location.hash='lenguage';
 					break;
 					case 4:
-						location.hash='cultura';
+						location.hash='culture';
 					break;
 					case 5:
-						location.hash='deporte';
+						location.hash='sports';
 					break;
 					case 6:
 						location.hash='karaoke';
 					break;
 					case 7:
-						location.hash='fiesta-en-lima';
+						location.hash='partying-lima';
 					break;
 					case 8:
-						location.hash='voluntariado';
+						location.hash='volunteering';
 					break;
 					case 9:
-						location.hash='contactenos';
+						location.hash='contact';
 					break;
 					case 10:
-						location.hash='participar';
+						location.hash='joinus';
 					break;
 				}
 			}
@@ -233,34 +230,34 @@ $(document).ready(function(){
 						history.pushState(null, null, urlLimpia+'');
 					break;
 					case 1:
-						history.pushState(null, null, urlLimpia+'#explorando-lima');
+						history.pushState(null, null, urlLimpia+'#exploring-lima');
 					break;
 					case 2:
-						history.pushState(null, null, urlLimpia+'#degustando');
+						history.pushState(null, null, urlLimpia+'#savoring-peruvian-food');
 					break;
 					case 3:
-						history.pushState(null, null, urlLimpia+'#idiomas');
+						history.pushState(null, null, urlLimpia+'#lenguage');
 					break;
 					case 4:
-						history.pushState(null, null, urlLimpia+'#cultura');
+						history.pushState(null, null, urlLimpia+'#culture');
 					break;
 					case 5:
-						history.pushState(null, null, urlLimpia+'#deporte');
+						history.pushState(null, null, urlLimpia+'#sports');
 					break;
 					case 6:
 						history.pushState(null, null, urlLimpia+'#karaoke');
 					break;
 					case 7:
-						history.pushState(null, null, urlLimpia+'#fiesta-en-lima');
+						history.pushState(null, null, urlLimpia+'#partying-lima');
 					break;
 					case 8:
-						history.pushState(null, null, urlLimpia+'#voluntariado');
+						history.pushState(null, null, urlLimpia+'#volunteering');
 					break;
 					case 9:
-						history.pushState(null, null, urlLimpia+'#contactenos');
+						history.pushState(null, null, urlLimpia+'#contact');
 					break;
 					case 10:
-						history.pushState(null, null, urlLimpia+'#participar');
+						history.pushState(null, null, urlLimpia+'#joinus');
 					break;
 
 				}				

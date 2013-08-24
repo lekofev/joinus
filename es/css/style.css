@@ -276,6 +276,8 @@ label.error{
 	height: 850px;
 	position: relative;
 	background-color: #414141;
+    /*min-width: 1324px;*/
+    overflow: hidden;
 }
 
 .menu{
@@ -283,6 +285,8 @@ label.error{
 	width: 100%;
 	z-index: 100;
 	background-color: #2d2d2d;
+    /*min-width: 1324px;*/
+    min-width: 960px;
 }
 .menu_logo{
 	height: 52px;
@@ -360,6 +364,7 @@ label.error{
 	bottom: 0;
 	z-index: 101;
     line-height: 2.4;
+    min-width: 960px;
 }
 
 .menu_lateral{
@@ -462,28 +467,55 @@ label.error{
 .secciones{
 	width: 100%;
 	height: 760px;
-	visibility: hidden;
+    visibility: hidden;
+    min-width: 960px;
+    /*overflow: hidden;*/
+}
+.secciones_cycle{
+/*    width: 1324px;
+    height: 760px;
+    margin: auto;*/
+
+    height: 760px;
+    left: 50%;
+    margin-left:-662px;
+    position: absolute;
+    width: 1324px;
 }
 .seccion{
-	width: 100%;
-	height: 100%;
+    width: 1324px;
+    height: 760px;
 }
 .centrado{
+/*movil
 	width: 960px;
 	height: 760px;
 	position: absolute;
 	left: 50%;
 	top: 50%;
 	margin-left: -480px;
-	margin-top: -380px;
+	margin-top: -380px;*/
+
+    width: 960px;
+    height: 760px;
+    margin: -200px auto 0; 
+    position: relative;     
+
 }
+
 .titulos_png{
-    background-repeat: no-repeat;
+/* movil
+   background-repeat: no-repeat;
     height: 200px;
     left: 50%;
     margin-left: -662px;
     position: absolute;
+    width: 1324px;*/
+
+    background-repeat: no-repeat;
+    height: 200px;
     width: 1324px;
+
 }
 
 .secciones .texto{
@@ -539,6 +571,7 @@ label.error{
     text-align: center;
     top: 490px;
     width: 640px;
+    height: 90px;
 }
 
 

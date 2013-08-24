@@ -44,43 +44,43 @@ $(document).ready(function(){
 		case '':
 			slide=0;
 		break;
-		case 'explorando-lima':
+		case 'リマを探索しよう':
 			slide=1;
 			$('a.explorando').addClass('activo')
 		break;
-		case 'degustando':
+		case 'ペルー料理の味わい':
 			slide=2;
 			$('a.degustando').addClass('activo')
 		break;
-		case 'idiomas':
+		case '言語交換':
 			slide=3;
 			$('a.idiomas').addClass('activo')
 		break;
-		case 'cultura':
+		case '文化と博物館':
 			slide=4;
 			$('a.cultura').addClass('activo')
 		break;
-		case 'deporte':
+		case 'スポッツ':
 			slide=5;
 			$('a.deporte').addClass('activo')
 		break;
-		case 'karaoke':
+		case 'カラオケ':
 			slide=6;
 			$('a.karaoke').addClass('activo')
 		break;
-		case 'fiesta-en-lima':
+		case 'リマでパーティーしよう':
 			slide=7;
 			$('a.partying').addClass('activo')
 		break;
-		case 'voluntariado':
+		case 'ボランティア活動':
 			slide=8;
 			$('a.voluntariado').addClass('activo')
 		break;
-		case 'contactenos':
+		case '問い合わせ':
 			slide=9;
 			$('a.contacto').addClass('activo')
 		break;
-		case 'participar':
+		case 'joinus':
 			slide=10;
 		break;
 		default:
@@ -91,7 +91,7 @@ $(document).ready(function(){
 
 			  
 
-	$('.secciones').cycle({ 
+	$('.secciones_cycle').cycle({ 
 			fx: 'fade',
 			timeout:0,
 			speed:1000,
@@ -114,7 +114,7 @@ $(document).ready(function(){
 			}
 		})
 
-		$('.secciones').css('visibility','visible')
+		$('.secciones_cycle').css('visibility','visible')
 
 		tl_esferas.add(
 			[
@@ -167,7 +167,7 @@ $(document).ready(function(){
 					$('.btn_participar').show()	
 				}
 
-				$('.secciones').cycle(slide)
+				$('.secciones_cycle').cycle(slide)
 				pushHistory(slide)
 			})
 
@@ -194,34 +194,34 @@ $(document).ready(function(){
 						location.hash='';
 					break;
 					case 1:
-						location.hash='explorando-lima';
+						location.hash='リマを探索しよう';
 					break;
 					case 2:
-						location.hash='degustando';
+						location.hash='ペルー料理の味わい';
 					break;
 					case 3:
-						location.hash='idiomas';
+						location.hash='言語交換';
 					break;
 					case 4:
-						location.hash='cultura';
+						location.hash='文化と博物館';
 					break;
 					case 5:
-						location.hash='deporte';
+						location.hash='スポッツ';
 					break;
 					case 6:
-						location.hash='karaoke';
+						location.hash='カラオケ';
 					break;
 					case 7:
-						location.hash='fiesta-en-lima';
+						location.hash='リマでパーティーしよう';
 					break;
 					case 8:
-						location.hash='voluntariado';
+						location.hash='ボランティア活動';
 					break;
 					case 9:
-						location.hash='contactenos';
+						location.hash='問い合わせ';
 					break;
 					case 10:
-						location.hash='participar';
+						location.hash='joinus';
 					break;
 				}
 			}
@@ -233,34 +233,34 @@ $(document).ready(function(){
 						history.pushState(null, null, urlLimpia+'');
 					break;
 					case 1:
-						history.pushState(null, null, urlLimpia+'#explorando-lima');
+						history.pushState(null, null, urlLimpia+'#リマを探索しよう');
 					break;
 					case 2:
-						history.pushState(null, null, urlLimpia+'#degustando');
+						history.pushState(null, null, urlLimpia+'#ペルー料理の味わい');
 					break;
 					case 3:
-						history.pushState(null, null, urlLimpia+'#idiomas');
+						history.pushState(null, null, urlLimpia+'#言語交換');
 					break;
 					case 4:
-						history.pushState(null, null, urlLimpia+'#cultura');
+						history.pushState(null, null, urlLimpia+'#文化と博物館');
 					break;
 					case 5:
-						history.pushState(null, null, urlLimpia+'#deporte');
+						history.pushState(null, null, urlLimpia+'#スポッツ');
 					break;
 					case 6:
-						history.pushState(null, null, urlLimpia+'#karaoke');
+						history.pushState(null, null, urlLimpia+'#カラオケ');
 					break;
 					case 7:
-						history.pushState(null, null, urlLimpia+'#fiesta-en-lima');
+						history.pushState(null, null, urlLimpia+'#リマでパーティーしよう');
 					break;
 					case 8:
-						history.pushState(null, null, urlLimpia+'#voluntariado');
+						history.pushState(null, null, urlLimpia+'#ボランティア活動');
 					break;
 					case 9:
-						history.pushState(null, null, urlLimpia+'#contactenos');
+						history.pushState(null, null, urlLimpia+'#問い合わせ');
 					break;
 					case 10:
-						history.pushState(null, null, urlLimpia+'#participar');
+						history.pushState(null, null, urlLimpia+'#joinus');
 					break;
 
 				}				

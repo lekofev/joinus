@@ -238,6 +238,7 @@ label.error{
 }
 .robo_black{
     font-family: 'robotobold_italic';
+    font-weight: bold;
 
 }
 .robo_reg{
@@ -273,19 +274,40 @@ label.error{
 }
 
 .page{
-	width: 100%;
+
+/*	width: 100%;
 	min-width: 960px;
 	min-height: 640px;
 	height: 850px;
 	position: relative;
 	background-color: #414141;
+*/
+
+
+    background-color: #414141;
+    height: 850px;
+    min-height: 640px;
+    min-width: 960px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+
 }
 
 .menu{
-	height: 82px;
+/*	height: 82px;
 	width: 100%;
 	z-index: 100;
-	background-color: #2d2d2d;
+	background-color: #2d2d2d;*/
+
+    background-color: #2D2D2D;
+    height: 82px;
+    min-width: 960px;
+    width: 100%;
+    z-index: 100;
+
+
 }
 .menu_logo{
 	height: 52px;
@@ -307,7 +329,7 @@ label.error{
 	display: block;
     height: 30px;
     margin: auto;
-    width: 960px;
+    width: 1000px;
 }
 .menu_items ul li{
 	display: block;
@@ -351,7 +373,7 @@ label.error{
 
 
 .pie_pagina{
-	width: 100%;
+/*	width: 100%;
 	height: 33px;
 	background-color: #2d2d2d;
 	text-align: center;
@@ -362,7 +384,23 @@ label.error{
 	left: 0;
 	bottom: 0;
 	z-index: 101;
+    line-height: 2.4;*/
+
+    background-color: #2D2D2D;
+    bottom: 0;
+    color: #FFFFFF;
+    font-family: arial;
+    font-size: 12px;
+    font-weight: bold;
+    height: 33px;
+    left: 0;
     line-height: 2.4;
+    min-width: 960px;
+    text-align: center;
+    width: 100%;
+    z-index: 101;
+
+
 }
 
 .menu_lateral{
@@ -466,29 +504,56 @@ label.error{
 
 
 .secciones{
-	width: 100%;
-	height: 760px;
-	visibility: hidden;
+    width: 100%;
+    height: 760px;
+    visibility: hidden;
+    min-width: 960px;
+    /*overflow: hidden;*/
+}
+.secciones_cycle{
+/*    width: 1324px;
+    height: 760px;
+    margin: auto;*/
+
+    height: 760px;
+    left: 50%;
+    margin-left:-662px;
+    position: absolute;
+    width: 1324px;
 }
 .seccion{
-	width: 100%;
-	height: 100%;
+    width: 1324px;
+    height: 760px;
 }
+
 .centrado{
-	width: 960px;
-	height: 760px;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	margin-left: -480px;
-	margin-top: -380px;
+/*  width: 960px;
+    height: 760px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -480px;
+    margin-top: -380px;*/
+
+
+
+    width: 960px;
+    height: 760px;
+    margin: -200px auto 0; 
+    position: relative;     
+
+
 }
 .titulos_png{
-    background-repeat: no-repeat;
+/*    background-repeat: no-repeat;
     height: 200px;
     left: 50%;
     margin-left: -662px;
     position: absolute;
+    width: 1324px;*/
+
+    background-repeat: no-repeat;
+    height: 200px;
     width: 1324px;
 }
 
@@ -503,10 +568,11 @@ label.error{
 }
 .secciones .comidilla{
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.5;
     position: absolute;
     font-family: 'bignoodletitlingregular';
+    width: 215px;
 }
 .seccion.inicio{
 	background-image: url(../images/inicio.jpg);
@@ -544,7 +610,8 @@ label.error{
     position: absolute;
     text-align: center;
     top: 490px;
-    width: 640px;
+    width: 660px;
+    height: 90px;
 }
 
 
@@ -560,15 +627,16 @@ label.error{
 }
 .seccion.explorando .texto{
     height: 410px;
-    left: 310px;
+    left: 305px;
     top: 200px;
-    width: 295px;
+    width: 320px;
 }
 .seccion.explorando .comidilla{
-    height: 163px;
+    height: 90px;
     left: 660px;
     top: 385px;
-    width: 195px;
+    width: 215px;
+    background-color: red;
 }
 .seccion.degustando{
 	background-image: url(../../images/degustando.jpg);
@@ -602,9 +670,9 @@ label.error{
 }
 .seccion.idiomas .texto{
     height: 410px;
-    left: 310px;
+    left: 300px;
     top: 220px;
-    width: 295px;
+    width: 335px;
 }
 .seccion.idiomas .comidilla{
     height: 163px;
@@ -625,7 +693,7 @@ label.error{
     height: 410px;
     left: 310px;
     top: 200px;
-    width: 285px;
+    width: 325px;
 }
 .seccion.cultura .comidilla{
     height: 163px;
@@ -646,7 +714,7 @@ label.error{
     height: 410px;
     left: 300px;
     top: 200px;
-    width: 295px;
+    width: 325px;
 }
 .seccion.deporte .comidilla{
     height: 223px;
@@ -667,13 +735,13 @@ label.error{
     height: 410px;
     left: 310px;
     top: 225px;
-    width: 295px;
+    width: 325px;
 }
 .seccion.karaoke .comidilla{
     height: 163px;
     left: 656px;
     top: 465px;
-    width: 204px;
+    width: 244px;
 }
 .seccion.partying{
 	background-image: url(../../images/partying.jpg);
@@ -688,7 +756,7 @@ label.error{
     height: 410px;
     left: 320px;
     top: 205px;
-    width: 289px;
+    width: 360px;
 }
 .seccion.partying .comidilla{
     height: 163px;
@@ -709,7 +777,7 @@ label.error{
     height: 410px;
     left: 310px;
     top: 202px;
-    width: 295px;
+    width: 335px;
 }
 .seccion.voluntariado .comidilla{
     height: 163px;
