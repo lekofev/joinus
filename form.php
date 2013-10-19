@@ -34,8 +34,21 @@
 	</script>
 </head>
 <body>
-	<script>
-	self.location="es/"
-	</script>
+	<?php
+		$email = $_REQUEST['email'] ;
+		$subject = "El asunto";
+
+		$fecha_principal = $_REQUEST['fecha_principal'] ;
+		$fecha_alternativa = $_REQUEST['fecha_alternativa'] ;
+		$fecha_alternativa2 = $_REQUEST['fecha_alternativa2'] ;
+		$nombre = $_REQUEST['nombre'] ;
+		$amigos = $_REQUEST['amigos'] ;
+		$telefono = $_REQUEST['telefono'] ;
+		$actividad = $_REQUEST['actividad'] ;
+
+		echo " Nombre: ".$nombre."\n Email: ".$email."\n Telefono: ".$telefono."\n Fecha Principal: ".$fecha_principal."\n Fecha Alternativa: ".$fecha_alternativa."\n Fecha Alternativa2: ".$fecha_alternativa2."\n Amigos?: ".$amigos."\n Mensaje: ".$_REQUEST['mensaje'];
+		$message= " Nombre: ".$nombre."\n Email: ".$email."\n Telefono: ".$telefono."\n Fecha Principal: ".$fecha_principal."\n Fecha Alternativa: ".$fecha_alternativa."\n Fecha Alternativa2: ".$fecha_alternativa2."\n Amigos?: ".$amigos."\n Actividad: ".$actividad."\n Mensaje: ".$_REQUEST['mensaje'];
+		mail("contacto@joinus.pe", $subject, $message, "From:" . $email);
+	?>
 </body>
 </html>

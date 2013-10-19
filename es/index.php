@@ -11,13 +11,12 @@
 	<meta name="keywords" content="">
 	
 	<!-- Opciones para compartir en Facebook -->
-	<meta property="og:title" content="">
-	<meta property="og:description" content="">
-	<meta property="og:type" content="">
-	<meta property="og:url" content="">
-	<meta property="og:image" content="">
-	<meta property="og:image:secure_url" content="">
-	<meta property="og:site_name" content="">
+	<meta property="og:title" content="Join Us">
+	<meta property="og:description" content="Experience millenary Peru. We would like to introduce the best of the country through the most entertaining and cultural activities in Lima.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://joinus.pe/es/">
+	<meta property="og:image" content="http://joinus.pe/images/face_.jpg">
+	<meta property="og:site_name" content="Join Us">
 	
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<link rel="stylesheet" href="css/reset.css">
@@ -26,7 +25,7 @@
 	
 	<script>
 		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-XXXXXXX-X']);
+		_gaq.push(['_setAccount', 'UA-44020996-1']);
 		_gaq.push(['_trackPageview']);
 		
 		(function() {
@@ -41,7 +40,7 @@
 	<div class="page es">
 		<div class="menu">
 			<div class="menu_logo">
-				<a class="logo sprite" href="index.html"></a>
+				<a class="logo sprite" href="index.php"></a>
 			</div>
 			<div class="menu_items">
 				<nav>
@@ -70,7 +69,7 @@
 					
 					<div class="titulo"> Únete a esta gran experiencia cultural en el PerÚ</div>
 					<div class="sub_titulo">
-						<span class="log_r">JOIN</span> <span class="log_v">US </span>ha sido creado para unir culturas de todo el mundo. A través de esta página, <span class="robo_black_n"> extranjeros y </span>
+						<span class="log_r">Join</span><span class="log_v">Us </span>ha sido creado para unir culturas de todo el mundo. A través de esta página, <span class="robo_black_n"> extranjeros y </span>
 
 					</div>
 					<div class="sub_titulo_2">
@@ -251,7 +250,7 @@ Te esperamos.
 						COMENTARIO:
 					</div>
 
-					<form action="" class="form">
+					<form class="form" >
 						<ul>
 							<li>
 								<input id="fecha_principal" name="fecha_principal" type ="text" class="skin textos" value="" maxlength="40">
@@ -270,7 +269,9 @@ Te esperamos.
 								<input id="email" name="email" type ="text" class="skin textos"  value=""  maxlength="200">
 							</li>
 							<li>
-								<input id="telefono" name="telefono" type="text" class="skin textos" value=""  maxlength="9">	
+								<input id="telefono" name="telefono" type="text" class="skin textos" value=""  maxlength="9">
+								<input id="actividad" name="actividad" type="hidden" class="skin textos" value="-">
+
 							</li>
 							<li>
 								<input type="radio" name="amigos" id="si" class="radio" checked>
@@ -303,11 +304,11 @@ Te esperamos.
 		<div class="menu_lateral">
 			<nav>
 			<ul>
-				<li class="fc sprite"><a href=""></a></li>
+				<li class="fc sprite"><a href="https://www.facebook.com/pages/Joinus/164034237132615"></a></li>
 				<li class="tw sprite"><a href=""></a></li>
-				<li class="es sprite"><a href="../es/index.html"></a></li>
-				<li class="jp sprite"><a href="../jp/index.html"></a></li>
-				<li class="us sprite"><a href="../us/index.html"></a></li>
+				<li class="es sprite"><a href="../es/index.php"></a></li>
+				<li class="jp sprite"><a href="../jp/index.php"></a></li>
+				<li class="us sprite"><a href="../us/index.php"></a></li>
 			</ul>
 			</nav>
 		</div>
@@ -322,7 +323,7 @@ Te esperamos.
 
 		<div class="msj_enviado">
 			<div class="gracias">
-				<a href="index.html" class="btns btn_gracias">Gracias</a>
+				<a href="/" class="btns btn_gracias">Gracias</a>
 			</div>
 		</div>
 

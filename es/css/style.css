@@ -284,7 +284,7 @@ label.error{
 	height: 82px;
 	width: 100%;
 	z-index: 100;
-	background-color: #2d2d2d;
+	background-color: #3b3b3b;
     /*min-width: 1324px;*/
     min-width: 960px;
 }
@@ -851,7 +851,7 @@ label.error{
 
 }
 .form li{
-	margin-bottom: 17px;
+	margin-bottom: 16px;
     position: relative;
 }
 input.radio{

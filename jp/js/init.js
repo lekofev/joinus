@@ -47,38 +47,47 @@ $(document).ready(function(){
 		case 'リマを探索しよう':
 			slide=1;
 			$('a.explorando').addClass('activo')
+			seleccionarActividad(slide)
 		break;
 		case 'ペルー料理の味わい':
 			slide=2;
 			$('a.degustando').addClass('activo')
+			seleccionarActividad(slide)
 		break;
 		case '言語交換':
 			slide=3;
 			$('a.idiomas').addClass('activo')
+			seleccionarActividad(slide)
 		break;
 		case '文化と博物館':
 			slide=4;
 			$('a.cultura').addClass('activo')
+			seleccionarActividad(slide)
 		break;
 		case 'スポッツ':
 			slide=5;
 			$('a.deporte').addClass('activo')
+			seleccionarActividad(slide)
 		break;
 		case 'カラオケ':
 			slide=6;
 			$('a.karaoke').addClass('activo')
+			seleccionarActividad(slide)
 		break;
 		case 'リマでパーティーしよう':
 			slide=7;
 			$('a.partying').addClass('activo')
+			seleccionarActividad(slide)
 		break;
 		case 'ボランティア活動':
 			slide=8;
 			$('a.voluntariado').addClass('activo')
+			seleccionarActividad(slide)
 		break;
 		case '問い合わせ':
 			slide=9;
 			$('a.contacto').addClass('activo')
+			seleccionarActividad(slide)
 		break;
 		case 'joinus':
 			slide=10;
@@ -154,9 +163,13 @@ $(document).ready(function(){
 				
 				$('.btn_participar').show()
 
-				$('a.botones').removeClass('activo')
-				$(this).addClass('activo')
 				slide=parseInt($(this).attr('data-page'))
+
+				if(slide!=10)
+				{
+					$('a.botones').removeClass('activo')
+					$(this).addClass('activo')
+				}
 
 				if(slide==9 || slide==10)
 				{
@@ -169,6 +182,7 @@ $(document).ready(function(){
 
 				$('.secciones_cycle').cycle(slide)
 				pushHistory(slide)
+				seleccionarActividad(slide)
 			})
 
 		})
@@ -183,6 +197,47 @@ $(document).ready(function(){
 		{
 			$('.btn_participar').show()	
 		}
+
+		function seleccionarActividad(n)
+		{
+				switch(n)
+				{
+					case 0:
+					break;
+					case 1:
+						$('#actividad').attr('value','Explorar lima')
+					break;
+					case 2:
+						$('#actividad').attr('value','Degustar')
+					break;
+					case 3:
+						$('#actividad').attr('value','Idiomas')
+					break;
+					case 4:
+						$('#actividad').attr('value','Cultura')
+					break;
+					case 5:
+						$('#actividad').attr('value','Deporte')
+					break;
+					case 6:
+						$('#actividad').attr('value','Karaoke')
+					break;
+					case 7:
+						$('#actividad').attr('value','Fiesta en lima')
+					break;
+					case 8:
+						$('#actividad').attr('value','Voluntariado')
+					break;
+					case 9:
+						$('#actividad').attr('value','-----')
+					break;
+					case 10:
+					break;
+				}
+		}
+
+
+
 
 		function pushHistory(n)
 		{	
@@ -272,18 +327,19 @@ $(document).ready(function(){
 
 	$(".btn_enviar").click(function(){
 			if($(".form").valid() == true){
-				if(lt_ie9)
-				{
-					$('.msj_enviado').show()				
-				}
-				else
-				{
-					$('.msj_enviado').fadeIn()
-				}
+				$.post("../form.php", $(".form").serialize(), function(data){
+				// console.log(data)				
+					if(lt_ie9)
+					{
+						$('.msj_enviado').show()				
+					}
+					else
+					{
+						$('.msj_enviado').fadeIn()
+					}
+				});// end $.post 
 			}else{
-				return false;	
-
-				console.log('no  nviado')			
+				return false;			
 			} // end $("#formulario-registro").valid 	
 	});	//end #btn-continuar.click
 		
