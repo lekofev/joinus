@@ -627,7 +627,7 @@ label.error{
 }
 .seccion.explorando .texto{
     height: 410px;
-    left: 305px;
+    left: 296px;
     top: 200px;
     width: 320px;
 }
@@ -732,7 +732,7 @@ label.error{
 }
 .seccion.karaoke .texto{
     height: 410px;
-    left: 310px;
+    left: 335px;
     top: 225px;
     width: 325px;
 }
@@ -753,9 +753,10 @@ label.error{
 }
 .seccion.partying .texto{
     height: 410px;
-    left: 320px;
-    top: 205px;
+    left: 281px;
+    top: 201px;
     width: 360px;
+    text-align: center;
 }
 .seccion.partying .comidilla{
     height: 163px;
@@ -774,7 +775,7 @@ label.error{
 }
 .seccion.voluntariado .texto{
     height: 410px;
-    left: 310px;
+    left: 326px;
     top: 202px;
     width: 335px;
 }

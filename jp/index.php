@@ -67,13 +67,15 @@
 					
 					<div class="titulo">ペルーで経験したことのない素晴らしい文化体験を楽しもう！</div>
 					<div class="sub_titulo">
-						<span class="log_r">JOIN</span> <span class="log_v">US </span>は世界の文化を統一させるために作成されています。
+						<span class="log_r">JOIN</span> <span class="log_v">US </span>は世界の文化を融合させるために立ち上げられました。 
 
 					</div>
 					<div class="sub_titulo_2">
-						当ページを通じて、あなた<span class="robo_black">外国人とペルー人</span>が様々意見、楽しい時間、<br>
-						口コミ情報、経験、外国言葉などを<span class="robo_black_n">交換することが出来ます。 </span><br>
-一人でも友達同でも大丈夫です。<span class="robo_black_n">好きな活動を選択をし、好きなことをやりながら、もっと楽しもう。 </span>
+						当ページを通じて、<span class="robo_black">海外からの旅行客とペルー人</span>が様々な意見、<br>
+						思い出の瞬間、口コミ情報、経験、言葉などを交換・共有することが出来ます。<br>
+						あなたが好きなことをしながら新しい友達やネットワークを広げてみませんか？ <br>
+						一人でも友達と一緒でも参加できます。 <br>
+						<span class="robo_black"> お待ちしております！</span>
 						
 					</div>
 
@@ -86,15 +88,22 @@
 				<div class="centrado">
 					<div class="texto">
 					
-リマは「<span class="f_rojo">王の都市」と呼ばれています。</span>リマの<br>
-<span class="robo_black">まだ様々歴史的所を見ることが出来ます。</span><br>
-場所がよく解る陽気なペルー人と外国人と一緒に訪<br>
-ねてください。<br><br>
+リマは別名<span class="f_rojo">「王の都市」</span>とも呼ばれています。<br>
+<span class="robo_black">ペルーの植民地時代の名残が多く残るこの街では、</span><br>
+様々な歴史的な建築物などをみる事ができます。<br><br>
 
-<span class="robo_black">リマの歴史に関する</span><span class="f_verde">話したい方</span>、それとも、リマの風<br>
-景を<span class="f_verde">眺めたい方</span>も是非参加してください。<br>
-リマの探索グループに<span class="robo_black">JOIN</span>して、リマ市について<span class="robo_black">もっ</span><br>
-<span class="robo_black">と知ろう、もっと習おう、もっと楽しもう。<br>
+リマにある数々の重要な観光名所を、リマ中にある隅々の <br>
+道までを知る現地の新しい友人と一緒に探索しましょう。 <br>
+現地のガイドが必見の場所を紹介します。 <br> <br>
+
+<span class="f_verde">そして、リマの街に関して話したい人、</span>もしくは<br>
+現地のペルー人と一緒に純粋に風景を楽しんでいたい方、 <br>
+またペルーについてもっと詳しく知りたい方なども <br>
+是非参加してください。 <br>
+
+リマの探索グループに<span class="robo_black">JOIN</span>して、<br>
+リマの街についてもっと知り。 <br>
+<span class="robo_black">そして伝統的且つモダンなリマをもっと楽しもう！<br>
 
 					</div>
 					<div class="comidilla">
@@ -127,15 +136,16 @@
 				<div class="titulos_png tit_png"></div>
 				<div class="centrado">
 					<div class="texto">					
-						このグループは色んなランゲージが習いたい人々の<br>
+						このグループは様々な言葉を習いたい人のための<br>
 						グループです。<br>
-						<span class="f_rojo">外国語が練習したいなら、ネイティブの人と練習して<br>
-						みてください。</span>ゼロからでも大丈夫です。プロになるは<br>
-						このグループの目的です。<br><br>
-						<span class="f_verde">新しい友達を作りながtら、</span>ペイン語、英語、フランス<br>
-						語、韓国語などを習いましょう。<span class="f_verde">世界のネットワークを</span><br>
-						<span class="f_verde">広げましょう。</span><span class="robo_black">このグループをJOINして、新しい言語<br>
-						経験しましょう。</span>
+						<span class="f_rojo">外国語を練習したい人は、ネイティブの人と楽しみながら<br>
+						練習してみてください。</span>流暢でなくても安心してください。<br>
+						一緒に上達していきましょう。<br><br>
+						<span class="f_verde">新しい友達、そしてあなたのグローバルなネットワーク</span>を<br>
+						広げながら、スペイン語、英語、フランス語、<br>
+						韓国語などを習ってみませんか。<br>
+						<span class="robo_black">このグループにJOINして、<br>
+						新しい言語への冒険に出かけましょう！</span>
 		
 
 					</div>
@@ -155,18 +165,20 @@
 				<div class="centrado">
 					<div class="texto">
 
-						あなたはもっと知りたい人であれば、世界の博物館<br>
-						訪問する人であれば、<span class="f_rojo">このグループはあなたの</span><br>
-						グループです。
+						もし美術館について学びたい、<br>
+						もしくは訪ねてみたい人がいたら、 <br>
+						<span class="f_rojo">このグループがそれを</span><br>
+						素敵な経験にしてくれるでしょう。 
 						<br><br>
 
-						都市の主要な美術館を訪問しましょう。<br>
-						芸術、歴史、哲学について意見を交換してみま<br>
-						しょう。<span class="f_verde">あなたの意見を実際に興味を持っている<br>
-						人々にシェアしてください。</span><br><br>
+						街にある美術館を是非訪ねてみてください。<br>
+						そして芸術、歴史、哲学について <br>
+						意見を交換しましょう。 <br>
+						<span class="f_verde">あなたのアイデアに興味を持っている<br>
+						人たちに共有してください。</span><br><br>
 
-						  <span class="robo_black">このグループにJOINして、芸術などについてシェ<br>
-						  	アしましょう。</span>
+						  <span class="robo_black">このグループにJOINして、<br>
+						  芸術についてシェアしよう！</span>
 
 					</div>
 					<div class="comidilla">
@@ -179,14 +191,16 @@
 				<div class="titulos_png tit_png"></div>
 				<div class="centrado">
 					<div class="texto">
-						スポッツグループはスポッツを優先しています。<br>
-						<span class="f_rojo">新しい友達と好きなスポッツをやってみないですか？</span><br><br>
+						このグループはスポーツが最優先事項。<br>
+						<span class="f_rojo">新しい友達とあなたの好きなスポーツをやりませんか？</span><br><br>
 
-						<span class="f_verde">テレビでスポッツを見ることも出来ます。</span><br>
-						スポッツについて意見を交換して、他の国の<br>
-						スポッツについてもっと知りましょう。<br>
-						スポッツグループに参加して、<span class="robo_black">国際スポッツ体験を<br>
-						もっと楽しもう！</span>
+						<span class="f_verde">テレビでスポーツ観戦をしながら楽しい時間を<br>
+						過ごす事もできます。</span><br>
+
+
+						意見交換して、他の国のスポーツについて<br>
+						もっと良く知ろう。このグループに参加して、<br>
+						<span class="robo_black">世界中のスポーツを楽しみましょう！</span>
 
 
 					</div>
@@ -202,14 +216,15 @@
 				<div class="centrado">
 					<div class="texto">
 
-						<span class="f_rojo">歌いましょう！</span> <br>
-						カラオケグループは歌いながら楽しい時間を過ごす<br>
-						グループです。上手に歌わなくてもいいです。皆で<br>
-						歌って楽しみましょう。<br><br>
+						<span class="f_rojo">歌いましょう！ </span>カラオケグループは純粋に <br>
+						歌いながら楽しい時間を過ごします。<br>
+						上手に歌う必要はありません。<br>
+						大切なのはみんなの前で楽しみながら歌うこと。<br><br>
 
-						<span class="f_verde">好きな曲「何の言葉でも良い」</span>を歌いながら、新しい<br>
-						友達といい時間を過ごしましょう。<br>
-						参加して、<span class="robo_black">もっとも楽しみましょうね！</span>
+						<span class="f_verde">言語に関係なくあなたの一番好きな歌を歌おう。</span><br>
+						そして新しい友達といい時間を過ごしましょう。 <br>
+						このグループに参加して、 <br>
+						<span class="robo_black">一緒にカラオケを楽しみませんか？</span>
 
 
 					</div>
@@ -223,14 +238,14 @@
 				<div class="centrado">
 					<div class="texto">
 
-						リマで楽しい時間を過ごしたいけど、<br>
-						良い場所がわかりません？<br>
-						ラテンダンスしながら、新しいステップが<br>
-						学びたいですか？<span class="f_rojo">音楽が好きですか？そうしたら、この<br>グルップはあなたのグルップです。</span><br><br>
+						<span class="f_rojo">リマで楽しい時間を過ごしたいけど、<br>
+						場所がわからない？ラテンダンスの新しいステップが学びたい？</span><br>
+						音楽が好きですか？<br><br>
 
-
-						<span class="f_verde">私たちと一緒にリマでダンスしながら、楽しんで<br>
-						ください。</span><span class="robo_black">一人でも、友達同でも大丈夫です！</span>
+						そんなあなたにはこのグループです。 <br>
+						<span class="f_verde">リマで私たちと一緒に楽しい時間を過ごしましょう。<br>
+						</span><span class="robo_black">一人でも、友達と一緒でも大丈夫。 <br>
+						 お待ちしております！</span>
 
 
 					</div>
@@ -245,18 +260,17 @@
 				<div class="centrado">
 					<div class="texto">
 		
-						あなたはペルーのソーシャルワークに興味がある人で<br>
-						あれば、
+						<span class="f_rojo">ソーシャルワークに興味ある方。</span><br>
+						ペルーという国にもっと深く関わりたいという方。 <br>
 
-						<span class="f_rojo">ペルーの開発状態が知りたい人であれば、ボラン<br>
-						ティア活動してみてください。<br>
-						色んな機関やNGOの様々なボランティア活動に<br>
-						参加してみませんか。
-						</span>
-						<br><br>
-						<span class="f_verde">ペルーで主な機関やNGOを紹介し、国の色んな開発<br>
-						活動に関わるプロジェクトの情報を差し上げます。
-						</span>
+						ペルーにある様々な機関やNGOでボランティア<br>
+
+						活動に参加してみませんか？<br><br>
+
+						<span class="f_verde">私たちがペルーにある主要なNGOを紹介し、</span><br>
+						 現在行われている色々な開発プロジェクトなどの<br>
+						
+						情報をお知らせします。
 						<br>
 						<br>
 						<span class="robo_black">
