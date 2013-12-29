@@ -40,7 +40,10 @@
 	<div class="page es">
 		<div class="menu">
 			<div class="menu_logo">
-				<a class="logo sprite" href="index.php"></a>
+				<a class="logo" href="index.php">
+					<img src="../images/logojoinus.png" alt="">
+					
+				</a>
 			</div>
 			<div class="menu_items">
 				<nav>
@@ -304,8 +307,9 @@ Te esperamos.
 		<div class="menu_lateral">
 			<nav>
 			<ul>
+				<!--
 				<li class="fc sprite"><a href="https://www.facebook.com/pages/Joinus/164034237132615"></a></li>
-				<li class="tw sprite"><a href=""></a></li>
+				<li class="tw sprite"><a href=""></a></li> -->
 				<li class="es sprite"><a href="../es/index.php"></a></li>
 				<li class="jp sprite"><a href="../jp/index.php"></a></li>
 				<li class="us sprite"><a href="../us/index.php"></a></li>

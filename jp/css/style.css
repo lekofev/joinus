@@ -302,7 +302,7 @@ label.error{
 	background-color: #2d2d2d;*/
 
     background-color: #3b3b3b;
-    height: 82px;
+    height: 100px;
     min-width: 960px;
     width: 100%;
     z-index: 100;
@@ -310,15 +310,17 @@ label.error{
 
 }
 .menu_logo{
-	height: 52px;
+    height: 70px;
 	width: 960px;
 	margin: auto;
 }
-.logo{
-	width: 130px;
-	height: 52px;
-	background-position: 20px 8px;
-	display: block;
+.logo {
+width: 221px;
+height: 64px;
+display: block;
+}
+.logo img{
+    margin-top: 5px;
 }
 .menu_items{
     background-color: #000000;

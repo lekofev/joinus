@@ -281,7 +281,7 @@ label.error{
 }
 
 .menu{
-	height: 82px;
+    height: 100px;
 	width: 100%;
 	z-index: 100;
 	background-color: #3b3b3b;
@@ -289,15 +289,17 @@ label.error{
     min-width: 960px;
 }
 .menu_logo{
-	height: 52px;
+    height: 70px;
 	width: 960px;
 	margin: auto;
 }
-.logo{
-	width: 130px;
-	height: 52px;
-	background-position: 20px 8px;
-	display: block;
+.logo {
+width: 221px;
+height: 64px;
+display: block;
+}
+.logo img{
+    margin-top: 5px;
 }
 .menu_items{
     background-color: #000000;
