@@ -40,7 +40,9 @@
 	<div class="page us">
 		<div class="menu">
 			<div class="menu_logo">
-				<a class="logo sprite" href="index.php"></a>
+				<a class="logo" href="index.php">
+					<img src="../images/logojoinus.png" alt="">
+				</a>
 			</div>
 			<div class="menu_items">
 				<ul>
@@ -304,8 +306,8 @@ Take part in our group and enjoy more singing!
 
 		<div class="menu_lateral">
 			<ul>
-				<li class="fc sprite"><a href="https://www.facebook.com/pages/Joinus/164034237132615"></a></li>
-				<li class="tw sprite"><a href=""></a></li>
+				<!-- <li class="fc sprite"><a href="https://www.facebook.com/pages/Joinus/164034237132615"></a></li>
+				<li class="tw sprite"><a href=""></a></li> -->
 				<li class="es sprite"><a href="../es/index.php"></a></li>
 				<li class="jp sprite"><a href="../jp/index.php"></a></li>
 				<li class="us sprite"><a href="../us/index.php"></a></li>
